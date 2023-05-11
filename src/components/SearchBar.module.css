@@ -1,0 +1,13 @@
+.search {
+  border: 0px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: #fad074;
+  height: 3em;
+}
+
+.button {
+  border: 0px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #fad074;
+  height: 3em;
+}
