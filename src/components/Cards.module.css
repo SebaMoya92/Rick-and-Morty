@@ -1,11 +1,21 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   width: fit-content;
   margin: auto;
-  background-color: #e83100;
+  background-color: hsl(9.35deg 80.21% 62.35%);
   padding: 2em;
   border-radius: 15px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container h2 {
+  margin-bottom: 0.5em;
+}
+
+.greenBox {
+  font-size: 20px;
+  font-family: "Creepster", cursive;
 }

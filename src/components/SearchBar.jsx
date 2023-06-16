@@ -1,11 +1,18 @@
-import style from "./SearchBar.module.css";
+import { useState } from "react";
+import styles from "./SearchBar.module.css";
+import { FaSearch } from "react-icons/fa";
 
-export default function SearchBar(onSearch) {
+export default function SearchBar({ onSearch }) {
+  const [id, setId] = useState("");
+  const handleChange = (event) => {
+    setId(event.target.value);
+  };
+
   return (
-    <div className={style.bar}>
-      <input className={style.search} type="search" />
-      <button className={style.button} onClick={onSearch}>
-        Agregar
+    <div className={styles.bar}>
+      <input className={styles.search} type="search" onChange={handleChange} />
+      <button className={styles.button} onClick={() => onSearch(id)}>
+        <FaSearch className={styles.searchIcon} />{" "}
       </button>
     </div>
   );
