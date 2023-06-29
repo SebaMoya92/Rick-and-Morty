@@ -59,6 +59,11 @@ function Form({ login }) {
           SUBMIT
         </button>
       </form>
+      <div className={style.example}>
+        <p>Try:</p>
+        <p>hello@mail.com</p>
+        <p>Mypass123</p>
+      </div>
     </div>
   );
 }

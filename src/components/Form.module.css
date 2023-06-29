@@ -175,3 +175,13 @@
     bottom: 100%;
   }
 }
+
+.example {
+  width: 100px;
+  height: 100px;
+}
+
+.example p {
+  line-height: 0;
+  color: rgb(157, 169, 151);
+}
